@@ -24,7 +24,7 @@ int main() {
 void example_run_LDPC()
 {
 	unsigned nMaxIter = 8; // number of decoders
-	int M = 4000; // code word length
+	int M = 1000; // code word length
 	double rate = 1.0 / 3; // code rate
 
 	unsigned K = unsigned(ceil(M * rate)); // information length
@@ -38,7 +38,7 @@ void example_run_LDPC()
 	normal_distribution<double> norm_dist(0, 1);
 
 	// Running parameters
-	vector<double> EsN0_dB = lin_space(-4, -3, 6);
+	vector<double> EsN0_dB = lin_space(-4, -2, 9);
 	vector<double> N0(EsN0_dB.size(), 0);
 	transform(EsN0_dB.begin(), EsN0_dB.end(), N0.begin(), [](const float& x) {return pow(10.0, -x / 10.0); });
 
