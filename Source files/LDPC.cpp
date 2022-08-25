@@ -1,4 +1,5 @@
 #include "LDPC.h"
+#include <math.h>   
 using namespace  std;
 
 nrLDPC::nrLDPC(size_t infoLen, double codeRate)
