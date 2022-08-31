@@ -9,7 +9,7 @@ This implementation uses min-sum offset decoding algorithms, read `LDPC_decoder_
 
 Any questions, eamil juquan.justin.mao@gmail.com 
 
-### Compling issue
+### Compiling issue
 
 * sprintf_s was not declared in this scope
    * please make sure c++ 11 or newer version used
